@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-gov-uk-content",
+  "version": "0.1.0",
+  "description": "GOV.UK Content + Search APIs (every gov.uk page + full search)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "gov-uk-content"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-gov-uk-content"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}

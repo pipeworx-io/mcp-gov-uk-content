@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/gov-uk-content",
+  "title": "Gov Uk Content",
+  "description": "GOV.UK Content + Search APIs (every gov.uk page + full search)",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/gov-uk-content",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-gov-uk-content",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/gov-uk-content/mcp"
+    }
+  ]
+}
