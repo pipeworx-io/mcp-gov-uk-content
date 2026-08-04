@@ -1,13 +1,21 @@
-# mcp-gov-uk-content
+# @pipeworx/gov-uk-content
 
-GOV.UK Content + Search APIs.
+[GOV.UK Content API](https://content-api.publishing.service.gov.uk/) MCP — the rendered content + metadata behind every page on gov.uk. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
+- `content(base_path)` — content for a gov.uk page (e.g. `/jobsearch`, `/government/organisations/cabinet-office`)
+- `search(query, count?, start?, filter_format?)` — full GOV.UK search
+- `organisations(start?, count?)` — list organisations (departments, agencies, …)
+- `taxons(base_path?)` — taxonomy tree node
+- `search_autocomplete(query)` — autocomplete on the search index
+
+## Data sources
+
+- Content API: `https://www.gov.uk/api/content/`
+- Search API: `https://www.gov.uk/api/search.json`
 
 ## Quick Start
 
@@ -23,7 +31,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +55,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
