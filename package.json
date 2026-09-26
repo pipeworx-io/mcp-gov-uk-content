@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-gov-uk-content",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "GOV.UK Content + Search APIs.",
   "type": "module",
   "main": "src/index.ts",
@@ -26,7 +26,7 @@
     "@cloudflare/workers-types": "^4.20260405.1"
   },
   "pipeworx": {
-    "sourceHash": "v1-5a8ffa3aafeedddc0d101eeef7f4421e2943a1d0c81d9b6b575778c16d799f6e",
-    "sourceCommit": "76aa8f5d9b5dc2f665563030647c68e661478864"
+    "sourceHash": "v1-6fd0ef686e3b5d7f621bdbff1f5f97f74bf1b4e2aa9050b3e79077df4da30283",
+    "sourceCommit": "1064560fd9dcd0d6fc2606298c2ba244b3a1fbeb"
   }
 }
