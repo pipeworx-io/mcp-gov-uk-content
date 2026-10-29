@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-gov-uk-content",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "GOV.UK Content + Search APIs.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-gov-uk-content": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "gov-uk-content"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-gov-uk-content.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/gov-uk-content",
   "pipeworx": {
-    "sourceHash": "v1-f4f58a4e0861a8862db1624de050fdc56bad1a027cfadbc1cd66b9b447ed8d77",
-    "sourceCommit": "445bacc5596a845c12d6945fbfcdf330ef60dcc4"
+    "mode": "gateway",
+    "slug": "gov-uk-content",
+    "gatewaySlug": "gov-uk-content",
+    "sourceHash": "v1-aff14367a5e9f4d51d312845e1dacda85240966c542be2e6376bdec0e4f2510e",
+    "sourceCommit": "4844029e402d6bd2fe735add8abf6d46735f8ed5"
   }
 }
